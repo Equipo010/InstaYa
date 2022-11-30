@@ -1,3 +1,15 @@
+#login-container{
+  place-items: center center;
+}
+
+#register-container{
+  place-items: center center;
+}
+
+#nueva-orden-container{
+  place-items: center center;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,37 +17,68 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.InstaYa-logo{
+  width: 200px;
+  height: 100px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.InstaYa-logo-izquierdo{
+  width: 100px;
+  height: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.Usuario-logo-derecho{
+  width: 45px;
+  height: 45px;
+  float: right;
 }
 
-.card {
-  padding: 2em;
+#login-form{
+  max-width: 330px;
 }
 
-.read-the-docs {
-  color: #888;
+#register-form{
+  max-width: 700px;
+}
+
+.form-control{
+  z-index: 5;
+}
+
+#registro{
+  background-color: green;
+}
+
+#tipo-doc{
+  width: 260px;
+  height: 48px;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+
+#s-nav{
+  background-color: rgb(255, 255, 255);
+  
+}
+
+.span-nav{
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font: bold;
+  color: rgb(0, 111, 207);
+  padding: 1rem;
+  text-decoration: none;
+}
+
+#menu-desplegable{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 111, 207);
+  float: right;
+  padding: 0.4rem;
+  border-color: rgb(255, 255, 255);
 }

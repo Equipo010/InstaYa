@@ -1,33 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css'
+import {Login} from "./components/Login";
+import {Register} from "./components/Register";
+import {NuevaOrden} from "./components/NuevaOrden";
+import {BarraNavegacion} from "./components/BarraNavegacion";
+import {ModificarOrden} from "./components/ModificarOrden";
+import {ListaOrdenes} from "./components/ListaOrdenes";
+import {User} from "./components/User";
+import {CambiarContraseña} from "./components/CambiarContraseña";
+import {OlvideContraseña} from "./components/OlvideContraseña";
+import {ValidacionCodigo} from "./components/ValidacionCodigo";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    <Router>
+
+      <Routes>
+        <Route path="/" element= {<Login/>}/>
+        <Route path="/register" element= {<Register/>}/>
+      </Routes>
+      <BarraNavegacion/>
+      <Routes>
+        <Route path="/nueva-orden" element= {<NuevaOrden/>}/>
+        <Route path="/user-config" element= {<User/>}/>
+        <Route path="/historial" element= {<ListaOrdenes/>}/>
+        <Route path="/cambiar-contraseña" element= {<CambiarContraseña/>}/>
+        <Route path="/modificar-orden" element= {<ModificarOrden/>}/>
+        <Route path="/olvide-contraseña" element= {<OlvideContraseña/>}/>
+        <Route path="/validacion-codigo" element= {<ValidacionCodigo/>}/>
+      </Routes>
+
+    </Router>
   )
 }
 
