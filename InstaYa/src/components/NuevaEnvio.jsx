@@ -9,7 +9,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { TimePicker } from '@mui/x-date-pickers/TimePicker';
 import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
 
-export function NuevaOrden(){
+export function NuevaEnvio(){
     const [value, setValue] = React.useState(new Date());
 
     const handleChange = (newValue) => {

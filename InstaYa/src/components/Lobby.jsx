@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
-export function ListaOrdenes(){
+export function Lobby(){
     return(
         <Container>
            <Form>

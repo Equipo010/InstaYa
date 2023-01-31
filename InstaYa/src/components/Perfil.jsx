@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 
-export function User(){
+export function Perfil(){
     return(
         <Container>
             <h5>Mi informacion</h5>
